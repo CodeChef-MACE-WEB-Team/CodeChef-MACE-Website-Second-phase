@@ -70,35 +70,13 @@ body {
 }
 
 #sub {
-    background-color: rgba(0, 0, 0, 0.4);
-    padding-top: 75px;
     text-align: center;
-    margin-top: 300px;
-    height: 150px;
-    color: rgb(228, 1, 1);
-    font-family: 'Bebas Neue', cursive;
-    animation: enlarge 1s ease-in-out infinite alternate;
+    padding-top: 40px;
+    padding-bottom: 100px;
+    color: rgb(255, 255, 255);
+    font-family: 'arial', cursive;
+    font-size: 50px;
     font-weight: 900;
-    line-height: 60px;
-    letter-spacing: 1.1rem;
-    text-shadow: 2px 2px 0 rgb(0, 0, 0);
-    /* padding-right: 80%;
-    color: #fff;
-    
-    font-family: 'Bebas Neue', cursive; 
-    line-height: 60px; 
-    letter-spacing: 1.1rem;
-    text-shadow: 2px 2px 0 #000;
-    text-align: center; */
-}
-
-@keyframes enlarge {
-    from {
-        font-size: 100%;
-    }
-    to {
-        font-size: 300%;
-    }
 }
 
 .section-left,
@@ -201,4 +179,38 @@ body {
 .youtube {
     color: white;
     background: #c4302b;
+}
+
+
+/*bottom icons*/
+
+.icon-div {
+    background-color: rgba(0, 0, 0, 0.4);
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.stickyicon-list-bottom {
+    width: 70px;
+    display: flex;
+    text-align: center;
+    margin: auto auto auto 42%;
+    /* transform: translateY(-50%); */
+}
+
+.stickyicon-list-bottom a {
+    text-align: center;
+    padding: 15px;
+    transition: all 0.5s ease;
+    color: white;
+    font-size: 20px;
+}
+
+.stickyicon-list-bottom a:hover {
+    color: #000;
+}
+
+.footer>img {
+    width: 100px;
+    padding: 30px 0 40px 30px;
 }

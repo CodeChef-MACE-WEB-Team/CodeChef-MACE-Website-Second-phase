@@ -8,8 +8,8 @@ html {
     height: 100vh;
     background: #000 url('Assets/preloader.gif') no-repeat center;
     position: fixed;
-    animation: fadeOut 0s 3s forwards;
-    animation-duration: 1s;
+    animation: fadeOut 0s 0s forwards;
+    animation-duration: 0s;
 }
 
 @keyframes fadeOut {
