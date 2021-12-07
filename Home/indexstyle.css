@@ -1,0 +1,148 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-image: url(../Assets/Webbackground.jpeg);
+    font-family: 'Inter', sans-serif;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.logo {
+    padding-top: 3.5%;
+    padding-bottom: 3.5%;
+}
+
+.logo>img {
+    width: 12%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.navbar {
+    padding-left: 20px;
+    padding-top: 20px;
+    display: flex;
+    position: sticky;
+    /* justify-content: flex-end; */
+}
+
+.nav {
+    /* padding-right: 5%; */
+    color: white;
+    box-sizing: border-box;
+    transition: all 0.3s ease-in-out;
+    z-index: 3;
+    position: fixed;
+    /* justify-content: flex-end; */
+}
+
+.title {
+    font-family: 'Righteous', cursive;
+    text-align: center;
+    color: ivory;
+    font-size: 500%;
+}
+
+.glow {
+    font-size: 80px;
+    color: #fff;
+    text-align: center;
+    animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+    from {
+        text-shadow: 0 0 10px #fff, 0 0 20px rgb(207, 202, 202), 0 0 30px rgb(87, 84, 84), 0 0 40px rgb(43, 39, 39), 0 0 50px rgb(19, 15, 15), 0 0 60px rgb(0, 0, 0), 0 0 70px rgb(189, 0, 0);
+    }
+    to {
+        text-shadow: 0 0 20px rgb(10, 4, 4), 0 0 30px rgb(214, 212, 212), 0 0 40px rgb(14, 9, 9), 0 0 50px rgb(10, 6, 6), 0 0 60px rgb(17, 13, 13), 0 0 70px rgb(15, 2, 2), 0 0 80px rgb(17, 13, 13);
+    }
+}
+
+#sub {
+    background-color: rgba(0, 0, 0, 0.4);
+    padding-top: 75px;
+    text-align: center;
+    margin-top: 300px;
+    height: 150px;
+    color: rgb(228, 1, 1);
+    font-family: 'Bebas Neue', cursive;
+    animation: enlarge 1s ease-in-out infinite alternate;
+    font-weight: 900;
+    line-height: 60px;
+    letter-spacing: 1.1rem;
+    text-shadow: 2px 2px 0 rgb(0, 0, 0);
+    /* padding-right: 80%;
+    color: #fff;
+    
+    font-family: 'Bebas Neue', cursive; 
+    line-height: 60px; 
+    letter-spacing: 1.1rem;
+    text-shadow: 2px 2px 0 #000;
+    text-align: center; */
+}
+
+@keyframes enlarge {
+    from {
+        font-size: 100%;
+    }
+    to {
+        font-size: 300%;
+    }
+}
+
+.section-left,
+.section-right {
+    height: 100%;
+    /* padding-left: 100px;
+    padding-top: 20px;
+    padding-bottom: 20px; */
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.section-left {
+    padding: 20px 0 20px 10%;
+    /* background-color: #fff; */
+}
+
+.section-right {
+    padding: 20px 0 20px 57%;
+    /* background-color: rgb(219, 213, 213); */
+}
+
+.sub-head {
+    padding: 50px 0 0 0;
+    /* color: #000; */
+    color: #fff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.sub-details {
+    /* padding-top: 20px; */
+    padding: 20px 0 50px 0;
+    /* color: #000; */
+    color: #fff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    letter-spacing: 1px;
+    line-height: 200%;
+    text-align: justify;
+    display: block;
+    width: 500px;
+}
+
+.null-split {
+    height: 150px;
+}
