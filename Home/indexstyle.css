@@ -259,3 +259,12 @@ body {
 .nav-update {
     padding-right: 920px;
 }
+
+.copyright {
+    color: white;
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    text-align: center;
+}
