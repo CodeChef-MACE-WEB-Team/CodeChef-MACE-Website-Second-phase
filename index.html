@@ -29,10 +29,8 @@
     <!-- <script src="Home/typewrite.js"></script> -->
 </head>
 
-<body>
+<body id="stop-scrolling">
     <!-- loading -->
-    <div class="container"></div>
-    <div id="preloader"></div>
     <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
             <div class="nav-update">
@@ -41,7 +39,6 @@
                 <!-- </a> -->
                 <a class="brand" href="#">CodeChef MACE</a>
             </div>
-
             <div class="justify-content-end">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -171,8 +168,14 @@
     <!-- <div id="outer">
         <div class="button_slide slide_down">BUTTON: SLIDE DOWN </div>
     </div> -->
+    <div id="sub">Our Magazine</div>
     <div id="outer">
-        <div class="button_slide slide_down">BUTTON: SLIDE DOWN </div>
+
+        <a href="https://issuu.com/codechefmace/docs/mace_plus_plus"><img src="Assets/maceplusplus.png" alt=""></a>
+        <br>
+        <a href="https://issuu.com/codechefmace/docs/mace_plus_plus">
+            <div class="button_slide slide_down">View Now</div>
+        </a>
     </div>
 
     <section id="contactUs">
@@ -181,7 +184,7 @@
         </div>
         <div class="contactUsDiv2">
             <div class="contactBox">
-                <form action="mailto:codechef@mace.ac.in" method="POST" enctype="text/plain">
+                <form action="mailto:souravak211@gmail.com" method="POST" enctype="text/plain">
                     <div class="contactFormDiv">
                         <div class="contact-form">
                             <label for="E-mail">Your Email: </label>
@@ -193,7 +196,7 @@
                             <textarea name="msg" id="msg" cols="30" rows="9" placeholder="Enter your Message"></textarea>
                         </div>
                     </div>
-                    <input class="sendBtn" type="submit" value="Send" />
+                    <input class="sendBtn" type="submit" value="Send" onClick="send()" />
                     <!-- <button class="sendBtn">Send</button> -->
                 </form>
             </div>
@@ -208,6 +211,7 @@
     </div>
     <br>
     <div class="copyright">&copy; Copyright 2021-22 | CodeChef-MACE | All rights reserved.</div>
+
 </body>
 
 
