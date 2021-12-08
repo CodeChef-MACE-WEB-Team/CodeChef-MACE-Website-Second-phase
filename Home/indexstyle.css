@@ -47,7 +47,7 @@ body {
 }
 
 .title {
-    font-family: 'Righteous', cursive;
+    font-family: 'arial', cursive;
     text-align: center;
     color: ivory;
     font-size: 500%;
@@ -62,10 +62,10 @@ body {
 
 @-webkit-keyframes glow {
     from {
-        text-shadow: 0 0 10px #fff, 0 0 20px rgb(207, 202, 202), 0 0 30px rgb(87, 84, 84), 0 0 40px rgb(43, 39, 39), 0 0 50px rgb(19, 15, 15), 0 0 60px rgb(0, 0, 0), 0 0 70px rgb(189, 0, 0);
+        text-shadow: 0 0 10px rgb(17, 16, 16), 0 0 20px rgb(105, 104, 104), 0 0 30px rgb(87, 84, 84), 0 0 40px rgb(43, 39, 39), 0 0 50px rgb(19, 15, 15), 0 0 60px rgb(0, 0, 0), 0 0 70px rgb(0, 0, 0);
     }
     to {
-        text-shadow: 0 0 20px rgb(10, 4, 4), 0 0 30px rgb(214, 212, 212), 0 0 40px rgb(14, 9, 9), 0 0 50px rgb(10, 6, 6), 0 0 60px rgb(17, 13, 13), 0 0 70px rgb(15, 2, 2), 0 0 80px rgb(17, 13, 13);
+        text-shadow: 0 0 20px rgb(10, 4, 4), 0 0 30px rgb(0, 0, 0), 0 0 40px rgb(14, 9, 9), 0 0 50px rgb(10, 6, 6), 0 0 60px rgb(17, 13, 13), 0 0 70px rgb(15, 2, 2), 0 0 80px rgb(17, 13, 13);
     }
 }
 
@@ -127,7 +127,7 @@ body {
 
 .stickyicon-list {
     position: fixed;
-    top: 200px;
+    top: 50%;
     transform: translateY(-50%);
 }
 
@@ -184,33 +184,18 @@ body {
 
 /*bottom icons*/
 
-.icon-div {
-    background-color: rgba(0, 0, 0, 0.4);
-    padding-top: 30px;
-    padding-bottom: 30px;
-}
-
-.stickyicon-list-bottom {
-    width: 70px;
-    display: flex;
-    text-align: center;
-    margin: auto auto auto 42%;
-    /* transform: translateY(-50%); */
-}
-
-.stickyicon-list-bottom a {
-    text-align: center;
-    padding: 15px;
-    transition: all 0.5s ease;
-    color: white;
-    font-size: 20px;
-}
-
-.stickyicon-list-bottom a:hover {
-    color: #000;
-}
-
-.footer>img {
+.footer-logo>img {
     width: 100px;
     padding: 30px 0 40px 30px;
+}
+
+.footer {
+    background-color: rgba(0, 0, 0, 0.4);
+    color: #fff;
+    display: flex;
+}
+
+.footer-title {
+    padding-top: 60px;
+    padding-left: 20px;
 }
