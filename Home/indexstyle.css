@@ -16,34 +16,15 @@ body {
     background-size: cover;
 }
 
-.logo {
-    padding-top: 3.5%;
-    padding-bottom: 3.5%;
+.main-logo {
+    padding-top: 150px;
 }
 
-.logo>img {
+.main-logo>img {
     width: 12%;
     display: block;
     margin-left: auto;
     margin-right: auto;
-}
-
-.navbar {
-    padding-left: 20px;
-    padding-top: 20px;
-    display: flex;
-    position: sticky;
-    /* justify-content: flex-end; */
-}
-
-.nav {
-    /* padding-right: 5%; */
-    color: white;
-    box-sizing: border-box;
-    transition: all 0.3s ease-in-out;
-    z-index: 3;
-    position: fixed;
-    /* justify-content: flex-end; */
 }
 
 .title {
@@ -198,4 +179,79 @@ body {
 .footer-title {
     padding-top: 60px;
     padding-left: 20px;
+}
+
+.logo {
+    height: 4rem;
+}
+
+
+/* Navbar */
+
+.nav-link {
+    font-size: 1.25rem;
+}
+
+.event-heading,
+.nav-item a {
+    text-decoration: none;
+    letter-spacing: 0.1em;
+    display: inline-block;
+    padding: 15px 20px;
+    position: relative;
+}
+
+.event-heading:after,
+.nav-item a:after {
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: lightseagreen;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+}
+
+.event-heading:hover:after,
+.nav-item a:hover:after {
+    width: 100%;
+    left: 0;
+}
+
+.brand {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.25rem;
+}
+
+.brand:hover {
+    color: #ffffff;
+}
+
+
+/* Event Carousel */
+
+.carousel-caption button {
+    background-color: transparent;
+    transition: .3s ease-in-out 0s;
+}
+
+.carousel-caption button:hover {
+    transform: scale(1.1);
+    background-color: #ffffff;
+}
+
+.event-heading {
+    color: lightseagreen;
+}
+
+.card-flyer:hover {
+    transform: scale(1.04);
+}
+
+.card-flyer {
+    transition: transform 2s ease;
 }
