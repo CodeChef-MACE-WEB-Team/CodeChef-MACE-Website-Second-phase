@@ -43,10 +43,10 @@ body {
 
 @-webkit-keyframes glow {
     from {
-        text-shadow: 0 0 10px rgb(17, 16, 16), 0 0 20px rgb(105, 104, 104), 0 0 30px rgb(87, 84, 84), 0 0 40px rgb(43, 39, 39), 0 0 50px rgb(19, 15, 15), 0 0 60px rgb(0, 0, 0), 0 0 70px rgb(0, 0, 0);
+        text-shadow: 0 0 10px rgb(17, 16, 16), 0 0 20px rgb(105, 104, 104), 0 0 30px rgb(87, 84, 84), 0 0 40px rgb(43, 39, 39), 0 0 50px rgb(19, 15, 15), 0 0 60px rgb(0, 0, 0), 0 0 70px rgb(255, 255, 255);
     }
     to {
-        text-shadow: 0 0 20px rgb(10, 4, 4), 0 0 30px rgb(0, 0, 0), 0 0 40px rgb(14, 9, 9), 0 0 50px rgb(10, 6, 6), 0 0 60px rgb(17, 13, 13), 0 0 70px rgb(15, 2, 2), 0 0 80px rgb(17, 13, 13);
+        text-shadow: 0 0 20px rgb(10, 4, 4), 0 0 30px rgb(0, 0, 0), 0 0 40px rgb(14, 9, 9), 0 0 50px rgb(10, 6, 6), 0 0 60px rgb(17, 13, 13), 0 0 70px rgb(15, 2, 2), 0 0 80px rgb(255, 255, 255);
     }
 }
 
@@ -222,7 +222,7 @@ body {
 }
 
 .brand {
-    color: #ffffff;
+    color: #fff;
     text-decoration: none;
     font-size: 1.25rem;
 }
@@ -254,4 +254,8 @@ body {
 
 .card-flyer {
     transition: transform 2s ease;
+}
+
+.nav-update {
+    padding-right: 920px;
 }
