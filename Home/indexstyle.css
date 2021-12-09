@@ -19,6 +19,7 @@ body {
 
 .main-logo {
     padding-top: 16%;
+    white-space: nowrap;
 }
 
 .main-logo>img {
