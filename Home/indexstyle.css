@@ -305,3 +305,7 @@ body {
 #outer>a>img {
     width: 400px;
 }
+
+.disabled {
+    display: none;
+}

@@ -3,7 +3,7 @@ html {
     height: 90%;
 }
 
-#preloader {
+.preloader {
     width: 100%;
     height: 100vh;
     background: #000 url('Assets/preloader.gif') no-repeat center;
@@ -32,11 +32,26 @@ html {
     width: 100%;
     height: 100vh;
     z-index: 99999999;
-    background-image: url('Assets/preloader.gif');
+    /* background-image: url('Assets/preloader.gif'); */
     /* your icon gif file path */
-    background-repeat: no-repeat;
-    background-color: #FFF;
-    background-position: center;
+    /* background-repeat: in; */
+    /* background-color: #FFF; */
+    /* background-position: center; */
+}
+
+.preloader img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
 }
 
 #stop-scrolling {
