@@ -10,11 +10,13 @@ html {
 }
 
 body {
-    background-image: url(../Assets/Webbackground.jpeg);
+    /* background-image: url(../Assets/Webbackground.jpeg); */
     font-family: 'Inter', sans-serif;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
+    /* background-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet); */
+    background: linear-gradient(to top right, #9600db 0%, #080808 100%);
+    /* background-repeat: no-repeat; */
+    /* background-attachment: fixed; */
+    /* background-size: cover; */
 }
 
 .main-logo {
@@ -63,14 +65,18 @@ body {
 }
 
 #section-2 {
+    background-image: url(../Assets/Webbackground.jpeg);
+    background-repeat: no-repeat;
+    /* background-attachment: fixed; */
+    background-size: cover;
     margin-left: auto;
     margin-right: auto;
+    padding-bottom: 27%;
 }
 
 .section-left,
 .section-right {
-    height: 100%;
-    width: 110%;
+    width: 100%;
     /* padding-left: 100px;
     padding-top: 20px;
     padding-bottom: 20px; */
@@ -189,6 +195,7 @@ body {
 .footer-title {
     padding-top: 60px;
     padding-left: 20px;
+    font-size: 12px;
 }
 
 .logo {
