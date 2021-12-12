@@ -15,12 +15,46 @@
 
     <!-- Style -->
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="../Home/nav.css">
 
-    <title>Contact Form #7</title>
+    <title>CodeChef MACE chapter</title>
+    <link rel="apple-touch-icon" type="image/png" href="Assets/logo/logo.png" />s
 </head>
 
 <body>
 
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <div>
+                <a class="navbar-brand" href="#">
+                    <img class="logo" src="\Assets\codechef2.png" alt="CodeChef" />
+                </a>
+                <a class="brand" href="#">CodeChef MACE</a>
+            </div>
+            <div class="justify-content-end">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="../Events/events.html" class="nav-link">Events</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../Team/team.html">Team</a>
+                        </li>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contactus.html">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
 
     <div class="content">
 
@@ -60,7 +94,7 @@
                             </div>
                             <div class="row">
                                 <div class="col-md-12 form-group">
-                                    <input type="submit" value="Send Message" class="btn btn-primary rounded-0 py-2 px-4">
+                                    <input type="submit" value="Send Message" class="btn btn-primary rounded-0 py-2 px-4" onClick="msg()">
                                     <span class="submitting"></span>
                                 </div>
                             </div>
@@ -95,7 +129,6 @@
                 </div>
             </div>
         </div>
-
     </div>
 
 
@@ -105,6 +138,11 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="js/jquery.validate.min.js"></script>
     <script src="js/main.js"></script>
+    <script>
+        function msg() {
+            alert("Message sent✅");
+        }
+    </script>
 
 </body>
 
