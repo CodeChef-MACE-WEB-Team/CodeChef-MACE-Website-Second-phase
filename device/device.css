@@ -133,6 +133,42 @@
         }
     }
     
+    @media only screen and (max-width:1200px) {
+        #section-2 {
+            margin-top: 26%;
+            padding-bottom: 59%;
+        }
+        .main-logo>img {
+            width: 40%;
+        }
+        .glow {
+            font-size: 25%
+        }
+        .section-left,
+        .section-right {
+            margin: 5%;
+            padding: 0;
+            width: 90%;
+        }
+        .sub-details {
+            font-size: 13px;
+        }
+        .section-container {
+            padding: 8%;
+            margin-bottom: 15%;
+        }
+        #sub {
+            margin-top: 6%;
+            margin-bottom: 6%;
+            padding-bottom: 28px;
+            font-size: 166%;
+        }
+        .initiatives-gallery {
+            padding-top: 9%;
+            height: auto;
+        }
+    }
+    
     @media only screen and (max-width:1024px) {}
     
     @media only screen and (max-width:511px) {
