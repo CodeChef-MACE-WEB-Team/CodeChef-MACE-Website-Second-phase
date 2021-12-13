@@ -86,6 +86,7 @@ body {
 }
 
 .section-right {
+    /* margin-top: 100%; */
     padding-left: 53%;
     padding-top: 6%;
     float: right;
@@ -100,11 +101,6 @@ body {
     line-height: 200%;
     text-align: justify;
     display: block;
-}
-
-.null-split {
-    height: 150px;
-    width: 110%;
 }
 
 .stickyicon-list {
