@@ -1,11 +1,13 @@
 .initiatives-gallery {
     display: flex;
+    height: 250px;
     justify-content: center;
+    margin-bottom: 5%;
 }
 
 #gallery-image {
-    width: 250px;
-    height: 250px;
+    width: 100%;
+    height: 100%;
     clip-path: polygon(50% 0%, 95% 25%, 95% 75%, 50% 100%, 5% 75%, 5% 25%);
 }
 
@@ -19,4 +21,9 @@
     background-image: linear-gradient(to bottom right, rgb(255, 255, 255), #74209C, rgb(255, 255, 255));
     padding: 8px;
     clip-path: polygon(50% 0%, 95% 25%, 95% 75%, 50% 100%, 5% 75%, 5% 25%);
+}
+
+.gallery-section {
+    background-color: rgba(0, 0, 0, 0.4);
+    padding-bottom: 5%;
 }
