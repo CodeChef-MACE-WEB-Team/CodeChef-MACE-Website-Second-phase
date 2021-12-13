@@ -58,6 +58,11 @@
     <link rel="stylesheet" href="device/device.css">
     <link rel="apple-touch-icon" type="image/png" href="Assets/logo/logo.png" />
     <link rel="stylesheet" href="Home/nav.css">
+
+    <!-- slide up effect -->
+    <link rel="stylesheet" href="fade/demo/css/styles.css" />
+    <link rel="stylesheet" href="fade/dist/aos.css" />
+
 </head>
 
 <body id="stop-scrolling">
@@ -134,23 +139,23 @@
     </section>
 
     <!-- why and what section  -->
-    <section class="section-left" id="aboutus">
+    <section class="section-left" id="aboutus" data-aos="fade-up">
         <div class="section-container">
-            <div class="sub-head">
+            <div class="sub-head" data-aos="fade-up">
                 What is CodeChef MACE Chapter
             </div>
-            <span class="sub-details">
+            <span class="sub-details" data-aos="fade-up">
                 CodeChef MACE Chapter is one of the best and most active clubs of MACE - with a vision to promote, impart and enhance the coding culture in students. They are thus provided ample opportunity to access resources and materials for competitive programming. This helps them to take a first smooth step to aim in the right direction.
             </span>
         </div>
     </section>
     <!-- why and what section 2 -->
     <section class="section-right">
-        <div class="section-container">
-            <div class="sub-head">
+        <div class="section-container" data-aos="fade-up">
+            <div class="sub-head" data-aos="fade-up">
                 Why CodeChef MACE Chapter
             </div>
-            <div class="sub-details">
+            <div class="sub-details" data-aos="fade-up">
                 The goal of CodeChef MACE Chapter is to promote a healthy coding culture among students by providing various opportunities for developing their skills. We ignite the inner passion for coding in students by presenting it in unique and exciting ways.
                 <span style="visibility: hidden;">ming. This helps them to take a first smooth step to aim in the right direction.</span>
             </div>
@@ -159,29 +164,28 @@
 
     <!-- initiatives section  -->
     <section class="gallery-section">
-        <div id="sub">Our Initiatives</div>
+        <div id="sub" style="padding-top: 45%;" data-aos="fade-up">Our Initiatives</div>
         <div class="initiatives-gallery">
-            <span class="gallery-border">
+            <span class="gallery-border" data-aos="fade-up">
                 <img id="gallery-image" src="Assets/mcl.jpg" alt="">
             </span>
-            <span class="gallery-border">
+            <span class="gallery-border" data-aos="fade-up">
                 <img id="gallery-image" src="Assets/TNP.png" alt="">
             </span>
-            <!-- <span class="gallery-border">
+            <!-- <span class="gallery-border" data-aos="fade-up">
                 <img id="gallery-image" src="Assets/codeactually" alt="">
             </span> -->
         </div>
     </section>
 
     <!-- magazine section  -->
-    <section class="magazine-section">
-        <div id="sub">Our Magazine</d iv>
-            <div id="outer">
-                <a href="https://issuu.com/codechefmace/docs/mace_plus_plus" target="_blank"><img src="Assets/maceplusplus.png" alt=""></a>
-                <a href="https://issuu.com/codechefmace/docs/mace_plus_plus" target="_blank">
-                    <div class="button_slide slide_down">View Now</div>
-                </a>
-            </div>
+    <section class="magazine-section" data-aos="fade-up">
+        <div id="sub" data-aos="fade-up">Our Magazine</div>
+        <div id="outer" data-aos="fade-up">
+            <a href="https://issuu.com/codechefmace/docs/mace_plus_plus" target="_blank"><img src="Assets/maceplusplus.png" alt=""></a>
+            <a href="https://issuu.com/codechefmace/docs/mace_plus_plus" target="_blank">
+                <div class="button_slide slide_down">View Now</div>
+            </a>
         </div>
     </section>
 
@@ -246,5 +250,11 @@
         overflow: hidden !important;
     }
 </style>
+<script src="fade/dist/aos.js"></script>
+<script>
+    AOS.init({
+        easing: 'ease-in-out-sine'
+    });
+</script>
 
 </html>
