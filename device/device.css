@@ -165,18 +165,28 @@
     }
     /* social */
     .stickyicon-list {
+        position: fixed;
+        top: 50%;
         transform: translateY(-50%);
+        z-index: 1;
     }
     .stickyicon-list a {
         display: block;
         text-align: center;
         padding: 8px;
+        transition: all 0.5s ease;
+        color: white;
+        font-size: 20px;
     }
     .stickyicon-list a:hover {
+        color: #000;
         width: 10px;
     }
     /* end of social */
     .copyright {
         font-size: 9px;
+    }
+    #header {
+        display: none;
     }
 }
