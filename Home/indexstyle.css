@@ -315,3 +315,40 @@ body {
 .social:hover>.list:hover {
     opacity: 1;
 }
+
+
+/* logo rotate */
+
+.rotateY {
+    animation-name: test;
+    animation-iteration-count: 3;
+    animation-duration: 4s;
+    animation-delay: 4s;
+    /* z-index: 99; */
+}
+
+.rotateY:hover {
+    transform: rotateY(360deg);
+    -moz-transform: rotateY(360deg);
+    -webkit-transform: rotateY(360deg);
+    transform-origin: center;
+    -moz-transform-origin: center;
+    -webkit-transform-origin: center;
+    transition: 3.0s ease;
+    -moz-transition: 3.0s ease;
+    -webkit-transition: 3.0s ease;
+}
+
+@-webkit-keyframes test {
+    from {
+        transform: rotateY(360deg);
+        -moz-transform: rotateY(360deg);
+        -webkit-transform: rotateY(360deg);
+        transform-origin: center;
+        -moz-transform-origin: center;
+        -webkit-transform-origin: center;
+        transition: 3.0s ease;
+        -moz-transition: 3.0s ease;
+        -webkit-transition: 3.0s ease;
+    }
+}
