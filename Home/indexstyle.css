@@ -290,7 +290,7 @@ body {
     padding-left: 0px;
 }
 
-li {
+.list {
     color: rgba(255, 255, 255, 0.6);
     list-style-type: none;
     display: inline-block;
@@ -304,14 +304,14 @@ li {
     transition: ease .3s;
 }
 
-li:hover {
+.list:hover {
     color: rgb(15, 202, 202);
 }
 
-.social:hover>li {
+.social:hover>.list {
     opacity: 0.5;
 }
 
-.social:hover>li:hover {
+.social:hover>.list:hover {
     opacity: 1;
 }
