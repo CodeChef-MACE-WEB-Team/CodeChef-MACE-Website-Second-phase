@@ -11,7 +11,10 @@ html {
 
 body {
     font-family: 'Inter', sans-serif;
-    background: linear-gradient(to top right, #9600db 0%, #080808 100%);
+}
+
+.gradient-bg {
+    background-image: radial-gradient( circle farthest-corner at 50% 50%, rgba(173, 0, 171, 1) 8.3%, rgba(15, 51, 92, 1) 79.4%);
 }
 
 #hero {
@@ -60,7 +63,8 @@ body {
 /* what and why */
 
 .about {
-    margin: 8% 0 8% 0;
+    /* margin: 8% 0 8% 0; */
+    padding-top: 1.5%;
 }
 
 .section-left,
@@ -216,7 +220,7 @@ body {
 }
 
 #outer>a>img {
-    margin: code auto 0 auto;
+    margin: 0 auto 0 auto;
     width: 60%;
     padding-left: 2%;
     padding-right: 2%;
