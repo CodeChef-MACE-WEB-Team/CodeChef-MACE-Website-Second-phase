@@ -62,6 +62,11 @@
     <!-- slide up effect -->
     <link rel="stylesheet" href="fade/demo/css/styles.css" />
     <link rel="stylesheet" href="fade/dist/aos.css" />
+    <!-- time counter -->
+    <link rel="stylesheet" href="stuffs/csstime.css" media="all">
+    <script src="stuffs/jqtime.download" id="jquery-js"></script>
+    <!-- social counter  -->
+    <link rel="stylesheet" href="stuffs/social-counter.css">
 
 </head>
 <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> -->
@@ -78,7 +83,7 @@
         <div class="container-fluid">
             <div>
                 <a class="navbar-brand" href="#">
-                    <img class="logo" src="\Assets\codechef2.png" alt="CodeChef" />
+                    <img class="logo" src="Assets\codechef2.png" alt="CodeChef" />
                 </a>
                 <a class="brand" href="#">CodeChef MACE</a>
             </div>
@@ -107,8 +112,6 @@
         </div>
     </nav>
 
-
-
     <!-- title and logo section-->
     <section id="hero">
         <div class="main-logo">
@@ -116,6 +119,11 @@
         </div>
         <div class="title">
             <span class="glow">CodeChef MACE Chapter</span>
+        </div>
+        <div class="countup" id="countup1">
+            <span class="timeel days" style="display: none;">2909</span>
+            <span class="timeel timeRefDays" style="display: none;">days</span><span class="timeel hours">3</span><span class="timeel timeRefHours">hours</span><span class="timeel minutes">28</span><span class="timeel timeRefMinutes">minutes</span>
+            <span class="timeel seconds">6</span><span class="timeel timeRefSeconds">seconds</span>
         </div>
     </section>
 
@@ -159,6 +167,12 @@
                 <img id="gallery-image" src="Assets/codeactually.png" alt="">
             </span>
             </div>
+        </div>
+
+        <!-- website vistor counter -->
+        <div class="visitor-container">
+            <div class="visitor-counter" data-target="1800">0</div>
+            <div class="visitor-counter-text">Total visitors</div>
         </div>
 
         <!-- magazine section  -->
@@ -232,6 +246,33 @@
         <div class="copyright">&copy; Copyright 2021-22 | CodeChef-MACE | All rights reserved.</div>
     </div>
 
+    <!-- counters -->
+    <!-- <section class="counters">
+        <div class="container">
+            <div>
+                <i class="fa fa-youtube counter-icon"></i>
+                <div class="counter" data-target="1800">0</div>
+                <div class="counter-text">Subscribers</div>
+            </div>
+            <div>
+                <i class="fa fa-twitter counter-icon"></i>
+                <div class="counter" data-target="700">0</div>
+                <div class="counter-text">Followers</div>
+            </div>
+            <div>
+                <i class="fa fa-facebook counter-icon"></i>
+                <div class="counter" data-target="600">0</div>
+                <div class="counter-text">Likes</div>
+            </div>
+            <div>
+                <i class="fa fa-linkedin counter-icon"></i>
+                <div class="counter" data-target="400">0</div>
+                <div class="counter-text">Connections</div>
+            </div>
+        </div>
+    </section> -->
+
+    <script src="./stuffs/social-counter.js"></script>
 </body>
 
 <!-- loader script -->
@@ -286,6 +327,65 @@
     AOS.init({
         easing: 'ease-in-out-sine'
     });
+</script>
+<style>
+    .countup {
+        margin-left: 70%;
+        padding-top: 15vh;
+        /* text-align: center; */
+        margin-bottom: 20px;
+    }
+    
+    .countup .timeel {
+        display: inline-block;
+        padding: 10px;
+        background: #151515;
+        margin: 0;
+        color: white;
+        min-width: 2.6rem;
+        margin-left: 13px;
+        border-radius: 10px 0 0 10px;
+    }
+    
+    .countup span[class*="timeRef"] {
+        border-radius: 0 10px 10px 0;
+        margin-left: 0;
+        background: rgba(198, 4, 216, 0.5);
+        color: rgb(255, 255, 255);
+    }
+</style>
+<script>
+    (function($) {
+        window.onload = function() {
+            countUpFromTime("Jan 1, 2014 12:00:00", 'countup1');
+        };
+
+        function countUpFromTime(countFrom, id) {
+            countFrom = new Date(countFrom).getTime();
+            var now = new Date(),
+                countFrom = new Date(countFrom),
+                timeDifference = (now - countFrom);
+
+            var secondsInADay = 60 * 60 * 1000 * 24,
+                secondsInAHour = 60 * 60 * 1000;
+
+            days = Math.floor(timeDifference / (secondsInADay) * 1);
+            hours = Math.floor((timeDifference % (secondsInADay)) / (secondsInAHour) * 1);
+            mins = Math.floor(((timeDifference % (secondsInADay)) % (secondsInAHour)) / (60 * 1000) * 1);
+            secs = Math.floor((((timeDifference % (secondsInADay)) % (secondsInAHour)) % (60 * 1000)) / 1000 * 1);
+
+            var idEl = document.getElementById(id);
+            idEl.getElementsByClassName('days')[0].innerHTML = days;
+            idEl.getElementsByClassName('hours')[0].innerHTML = hours;
+            idEl.getElementsByClassName('minutes')[0].innerHTML = mins;
+            idEl.getElementsByClassName('seconds')[0].innerHTML = secs;
+
+            clearTimeout(countUpFromTime.interval);
+            countUpFromTime.interval = setTimeout(function() {
+                countUpFromTime(countFrom, id);
+            }, 1000);
+        }
+    })(jQuery);
 </script>
 
 </html>
