@@ -1,25 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-.visitor-counters {}
-
-.visitor-counters .visitor-counter-container {
-    grid-template-columns: repeat(4, 1fr);
-    grid-gap: 10px;
-    text-align: center;
-}
+.visitor-counter {}
 
 .visitor-container {
-    background-color: rgb(74, 20, 110);
-    margin-left: auto;
-    margin-right: auto;
+    padding-top: 5%;
+    padding-bottom: 5%;
 }
 
-.visitor-counters i {
-    color: lightskyblue;
-    margin-bottom: 5px;
+.visitor-counter,
+.visitor-counter-text {
+    text-align: center;
+    color: #fff;
+    font-weight: bold;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-.visitor-counters .visirtor-counter {
-    font-size: 40px;
+.visitor-container:hover {
+    font-size: 1.4em;
+    transition: 4s;
 }
-
-@media (max-width: 700px) {}
