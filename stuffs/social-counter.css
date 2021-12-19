@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+.visitor-counters {}
+
+.visitor-counters .visitor-counter-container {
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    text-align: center;
+}
+
+.visitor-container {
+    background-color: rgb(74, 20, 110);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.visitor-counters i {
+    color: lightskyblue;
+    margin-bottom: 5px;
+}
+
+.visitor-counters .visirtor-counter {
+    font-size: 40px;
+}
+
+@media (max-width: 700px) {}
