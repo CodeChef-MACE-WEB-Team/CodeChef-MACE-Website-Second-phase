@@ -216,8 +216,8 @@ body {
 }
 
 #outer>a>img {
-    margin: 4% auto 0 auto;
-    width: 100%;
+    margin: code auto 0 auto;
+    width: 60%;
     padding-left: 2%;
     padding-right: 2%;
     opacity: 0.6;
@@ -226,6 +226,7 @@ body {
 
 #outer>a>img:hover {
     opacity: 1;
+    filter: blur(3px);
 }
 
 
