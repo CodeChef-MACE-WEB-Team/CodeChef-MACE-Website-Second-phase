@@ -1,6 +1,6 @@
 $.fn.jQuerySimpleCounter = function(options) {
     var settings = $.extend({
-        start: 0,
+        start: -2500,
         end: 1000,
         easing: 'swing',
         duration: 400,
@@ -14,7 +14,9 @@ $.fn.jQuerySimpleCounter = function(options) {
         easing: settings.easing,
         step: function() {
             var mathCount = Math.ceil(this.count);
-            thisElement.text(mathCount + '+');
+            if (mathCount > 0)
+                thisElement.text(mathCount + '+');
+
         },
         complete: settings.complete
     });

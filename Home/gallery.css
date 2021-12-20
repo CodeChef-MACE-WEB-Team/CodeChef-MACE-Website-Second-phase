@@ -24,6 +24,6 @@
 .gallery-section {
     background-color: rgba(0, 0, 0, 0.4);
     padding-bottom: 5%;
-    padding-top: 5%;
+    /* padding-top: 5%; */
     /* display: none; */
 }
